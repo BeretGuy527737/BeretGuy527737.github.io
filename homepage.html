@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<script>
+function addArrow(text)
+    {
+        text.innerHTML=">"+text.innerHTML+"<";
+    }
+function removeArrow(text)
+{
+    if(text.innerHTML.toString().includes("about")) text.innerHTML="about";
+    else if(text.innerHTML.toString().includes("translation")) text.innerHTML="translation";
+    else if(text.innerHTML.toString().includes("essays")) text.innerHTML="essays";
+    else if(text.innerHTML.toString().includes("travelogue")) text.innerHTML="travelogue";
+}
+function clickArrow(text)
+{
+    text.innerHTML=">>"+text.innerHTML+"<<";
+}
+function go(text)
+{
+    if(text.innerHTML.toString().includes("about")) location.href="https://xkcd.com";
+    else if(text.innerHTML.toString().includes("translation")) location.href="https://reddit.com";
+    else if(text.innerHTML.toString().includes("essays")) location.href="https://cnn.com";
+    else if(text.innerHTML.toString().includes("travelogue")) location.href="https://google.com";
+}
+</script>
+<style>
+    .opt
+    {
+        font-size:2vw;
+        display:inline-block;
+        padding-bottom: 0px;
+        padding-top:0px;
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    </style>
+</head>
+
+<body style="background-color: white; font-family:'Courier New', Courier, monospace;">
+    <div style="height:30vh"></div>
+    <div style="text-align: center;margin-bottom: 0px;padding-bottom: 0px;"><h1 style="font-size:5vw;padding-bottom: 0px;margin-bottom:0px">jasper cunningham</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this);">about</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)">translation</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)">essays</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)">travelogue</h1></div>
+</body>
+</html>
