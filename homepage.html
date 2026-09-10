@@ -25,6 +25,13 @@ function go(text)
     else if(text.innerHTML.toString().includes("essays")) location.href="https://cnn.com";
     else if(text.innerHTML.toString().includes("travelogue")) location.href="https://google.com";
 }
+function clear()
+{
+    document.getElementById("about").innerHTML="about";
+    document.getElementById("translation").innerHTML="translation";
+    document.getElementById("essays").innerHTML="essays";
+    document.getElementById("travelogue").innerHTML="travelogue";
+}
 </script>
 <style>
     .opt
@@ -39,12 +46,12 @@ function go(text)
     </style>
 </head>
 
-<body style="background-color: white; font-family:'Courier New', Courier, monospace;">
+<body style="background-color: white; font-family:'Courier New', Courier, monospace;"; onload="clear()";>
     <div style="height:30vh"></div>
     <div style="text-align: center;margin-bottom: 0px;padding-bottom: 0px;"><h1 style="font-size:5vw;padding-bottom: 0px;margin-bottom:0px">jasper cunningham</h1></div>
-    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; onload="addArrow(this)";>about</h1></div>
-    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; onload="removeArrow(this)";>translation</h1></div>
-    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; onload="removeArrow(this)";>essays</h1></div>
-    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; onload="removeArrow(this)";>travelogue</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; id="about";>about</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; id="translation";>translation</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; id="essays";>essays</h1></div>
+    <div style="text-align: center;"><h1 class="opt"; onmouseenter="addArrow(this)"; onmouseleave="removeArrow(this)"; onmousedown="clickArrow(this)"; onmouseup="go(this)"; id="travelogue";>travelogue</h1></div>
 </body>
 </html>
