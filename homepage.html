@@ -3,6 +3,13 @@
 <head>
 <title>Home</title>
 <script>
+
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload() 
+    }
+};
+    
 function addArrow(text)
     {
         text.innerHTML=">"+text.innerHTML+"<";
