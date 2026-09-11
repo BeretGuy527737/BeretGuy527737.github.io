@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="Cache-control" content="no-store">
 <title>Home</title>
 <script>
-    
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
+
 function addArrow(text)
     {
         text.innerHTML=">"+text.innerHTML+"<";
