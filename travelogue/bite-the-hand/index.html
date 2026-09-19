@@ -1,0 +1,218 @@
+<!DOCTYPE=html>
+<html>
+<head>
+<title>Bite the Hand</title>
+<style>
+	.change {
+		transition: color 2s ease 0s;
+	}
+	body {
+		background-color: black;
+	}
+	#myButton {
+		background-color: black;
+		color:rgb(20, 200, 170);
+		border-color: white;
+	}
+	.centered
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	#intro
+	{
+		color: white;
+	}
+	.reveal
+	{
+		color: black;
+		/*visibility: hidden;*/
+		transition: color 2s ease 0s;
+	}
+	.lyric
+	{
+		font-style: italic;
+	}
+	.reveal-i
+	{
+		opacity: 0.0;
+		transition: opacity 2s ease 0s;
+		width: 20vw;
+	}
+	a:link{
+        color:rgb(20, 200, 170);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:visited{
+        color:rgb(20, 200, 170);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover{
+        color:rgb(20, 200, 170);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    a:active{
+        color:rgb(7, 104, 88);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .main-h
+    {
+        display: inline-block;
+        border-color: rgb(20, 200, 170); 
+        padding: 10px; 
+        color:rgb(20, 200, 170);
+        border-style:solid;
+        border-width: 2px;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main-t
+    {
+        color:black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:lighter;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    .main-t-s
+    {
+        color:black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight:lighter;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    .sub-h
+    {
+        text-align:left;
+        color:rgb(20, 200, 170);
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left:20px;
+        font-size:20px;
+        margin-top:20px;
+    }
+</style>
+<link rel="icon" type="image/x-icon" href="https://jasperdylancunningham.com/favicon.ico">
+</head>
+<body>
+<div><p style="font-size:large;margin-left:10px;margin-top:0px;padding-top:10px;font-family: 'Courier New', Courier, monospace;color:rgb(20, 200, 170)"><a href="../">&lt;back</a></p></div>
+<div id="intro" class="centered change main-t-s">
+	<p>Click the button labeled "begin" while simultaneously starting the song "Bite the Hand" by Boygenius. This is easiest done on a second device. Start the song, then pause it and rewind to the beginning before clicking the button and starting the song again at the same time. This will ensure the song is fully loaded and will sync correctly. You will need to scroll.</p>
+</div>
+<div class="centered" id="dButton">
+	<button id="myButton" class="main-t-s"><a>BEGIN</a></button>
+</div>
+<div id="main" class="main-t-s">
+	<p class="reveal lyric" id = "L1">I can't hear you</p>
+	<p class="reveal lyric" id = "L2">You're too far away</p>
+	<p class="reveal" id = "T1">The coast of the Emirates appeared to me an alien world of extremes. The desert's dark expanse and the spires' bright light. And nothing in between.</p>
+	<img class="reveal-i" id="I1" src="towers2.jpeg" alt="towers in dubai">
+	<p class="reveal lyric" id = "L3">The light is in my face</p>
+	<p class="reveal" id = "T2">The barrenness of the sand and the impossibility of the glowing glass and steel. Human over nature. Something from nothing.</p>
+	<img class="reveal-i" id="I2" src="towers1-edit.jpeg" alt="towers in dubai">
+	<p class="reveal lyric" id = "L4">I can't love you</p>
+	<p class="reveal lyric" id = "L5">how you want me to</p>
+	<p class="reveal" id = "T3">I thought of her across the world. I didn't know then the pain and the guilt, but I felt it in the distance between us.</p>
+	<p class="reveal lyric" id = "E1">I can't love you</p>
+	<p class="reveal lyric" id = "E2">how you want me to</p>
+	<p class="reveal" id = "T4">I thought of the years to come. When the plane landed in Dubai, I felt the weight of my future selves, all present in that same cramped seat. I anticipated each departure-tinged arrival. They washed over me in waves.</p>
+	<img class="reveal-i" id="I3" src="plane2.jpeg" alt="view of dubai from plane">
+	<p class="reveal lyric" id = "L6">But you want what</p>
+	<p class="reveal lyric" id = "E3">I can't give to you</p>
+	<p class="reveal" id = "T5">In reality, it was a city I would never come to possess.</p>
+	<img class="reveal-i" id="I4" src="view1.jpeg" alt="view of abu dhabi">
+	<p class="reveal" id = "T6">On the flight, a fragment of song had returned to me again and again, half remembered from some friend's car</p>
+	<p class="reveal lyric" id = "L7">I can't love you</p>
+	<p class="reveal lyric" id = "L8">how you want me to</p>
+	<img class="reveal-i" id="I7" src="plane3.jpg" alt="view from plane">
+	<p class="reveal" id = "T7">It came to me as if in a dream. I found it when the plane landed. "Bite the Hand."</p>
+	<p class="reveal" id = "T8">Half awake, I stared at the unknown through the bus window. The shore seemed dark, impossibly so. I tried to imagine that beyond the tall streetlights and the highway guardrail, the world ended.</p>
+	<img class="reveal-i" id="I5" src="toe1-edit.jpeg" alt="highway in UAE">
+	<p class="reveal lyric" id = "E4">Who do you think you are?</p>
+	<p class="reveal lyric" id = "E5">Who do you think I am?</p>
+	<p class="reveal lyric" id = "E6">What do you wanna say?</p>
+	<p class="reveal lyric" id = "E7">What do you think will change?</p>
+	<p class="reveal lyric" id = "E8">Maybe I'm afraid of you</p>
+	<p class="reveal lyric" id = "E9">Maybe I'm afraid of you</p>
+	<p class="reveal" id = "T9">Last night I drove home from their apartment. It's almost impossible to tell when things begin to end.</p>
+	<p class="reveal lyric" id = "L9">Bite the hand</p>
+	<p class="reveal" id = "T10">It streamed out of my car windows which I refused to roll up, even as the winds battered my face and hair. I sped along the shore, then across. And for the first time, I smelled the river.</p>
+	<p class="reveal lyric" id = "E10">Bite the hand</p>
+	<img class="reveal-i" id="I6" src="hm.jpeg" alt="new brunswick parking lot">
+	<p class="reveal lyric" id = "E11">I can't love you</p>
+	<p class="reveal lyric" id = "E12">how you want me to</p>
+	<p class="reveal lyric" id = "E13">I can't love you</p>
+	<p class="reveal lyric" id = "E14">how you want me to</p>
+
+</div>
+<script>
+	const alButton = document.getElementById("myButton");
+	var startTime = new Date;
+	
+	function fMain()
+	{
+		var elapsed = new Date().getTime() - startTime;
+		if(false);
+		else if(elapsed>186500) document.getElementById("E14").style.setProperty("color", "white");
+		else if(elapsed>184700) document.getElementById("E13").style.setProperty("color", "white");
+		else if(elapsed>178700) document.getElementById("E12").style.setProperty("color", "white");
+		else if(elapsed>177000) document.getElementById("E11").style.setProperty("color", "white");
+		else if(elapsed>149000) document.getElementById("I6").style.setProperty("opacity", 1.0);
+		else if(elapsed>147500) document.getElementById("E10").style.setProperty("color", "white");
+		else if(elapsed>141500) document.getElementById("T10").style.setProperty("color", "white");
+		else if(elapsed>140500) document.getElementById("L9").style.setProperty("color", "white");
+		else if(elapsed>135000) document.getElementById("T9").style.setProperty("color", "white");
+		else if(elapsed>131000) document.getElementById("E9").style.setProperty("color", "white");
+		else if(elapsed>127500) document.getElementById("E8").style.setProperty("color", "white");
+		else if(elapsed>125500) document.getElementById("E7").style.setProperty("color", "white");
+		else if(elapsed>124000) document.getElementById("E6").style.setProperty("color", "white");
+		else if(elapsed>122000) document.getElementById("E5").style.setProperty("color", "white");
+		else if(elapsed>120500) document.getElementById("E4").style.setProperty("color", "white");
+		else if(elapsed>103000) document.getElementById("I5").style.setProperty("opacity", 1.0);
+		else if(elapsed>101500) document.getElementById("T8").style.setProperty("color", "white");
+		else if(elapsed>90000) document.getElementById("T7").style.setProperty("color", "white");
+		else if(elapsed>86000) document.getElementById("I7").style.setProperty("opacity", 1.0);
+		else if(elapsed>84800) document.getElementById("L8").style.setProperty("color", "white");
+		else if(elapsed>82500) document.getElementById("L7").style.setProperty("color", "white");
+		else if(elapsed>79000) document.getElementById("T6").style.setProperty("color", "white");
+		else if(elapsed>72000) document.getElementById("I4").style.setProperty("opacity", 1.0);
+		else if(elapsed>71000) document.getElementById("T5").style.setProperty("color", "white");
+		else if(elapsed>69500) document.getElementById("E3").style.setProperty("color", "white");
+		else if(elapsed>65000) document.getElementById("L6").style.setProperty("color", "white");
+		else if(elapsed>60000) document.getElementById("I3").style.setProperty("opacity", 1.0);
+		else if(elapsed>47000) document.getElementById("T4").style.setProperty("color", "white");
+		else if(elapsed>40500) document.getElementById("E2").style.setProperty("color", "white");
+		else if(elapsed>38000) document.getElementById("E1").style.setProperty("color", "white");
+		else if(elapsed>32000) document.getElementById("T3").style.setProperty("color", "white");
+		else if(elapsed>31000) document.getElementById("L5").style.setProperty("color", "white");
+		else if(elapsed>28500) document.getElementById("L4").style.setProperty("color", "white");
+		else if(elapsed>18000) document.getElementById("I2").style.setProperty("opacity", 1.0);
+		else if(elapsed>16000) document.getElementById("T2").style.setProperty("color", "white");
+		else if(elapsed>14700) document.getElementById("L3").style.setProperty("color", "white");
+		else if(elapsed>10000) document.getElementById("I1").style.setProperty("opacity", 1.0);
+		else if(elapsed>9000) document.getElementById("T1").style.setProperty("color", "white");
+		else if(elapsed>8200) document.getElementById("L2").style.setProperty("color", "white");
+		else if(elapsed>4500) document.getElementById("L1").style.setProperty("color", "white");
+	}
+
+	alButton.addEventListener("click", ()=>{
+	//myText.style.setProperty("color", "white");
+	document.getElementById("intro").style.setProperty("color", "black");
+	alButton.hidden=true;
+
+
+	startTime = new Date().getTime();
+	setInterval(fMain, 50);
+
+})
+</script>
+</body>
+</html>
